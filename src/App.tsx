@@ -10,6 +10,7 @@ function DelayedUpdateComponent() {
   };
 
   useEffect(() => {
+    console.log("DelayedUpdateComponent.useEffect")
     const interval = setInterval(() => {
       if (tempValue.current !== displayValue) {
         setDisplayValue(tempValue.current);
